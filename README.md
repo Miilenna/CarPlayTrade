@@ -58,4 +58,4 @@ Explicar que páginas hay y poner el enlace del figma.
 ### Pantalla de juegos (proximamente)
 
 # Sprint3
-Hacer los wireframes con las flechitas.
+Hacer los wireframes con las flechitas ().
