@@ -1,5 +1,4 @@
-# Proyecto2
-
+## DAW WIREFRAMES:
 # Sprint 1
 ### Pantalla inicial
 
@@ -23,14 +22,13 @@
 
 ### Pantalla de coches guardados/favoritos
 
-### Pantalla paso1 de vender coche
+### Pantalla paso1 de vender coche (datos del coche)
 
-### Pantalla paso2 de vender coche
+### Pantalla del anuncio creado
 
-### Pantalla paso3 de vender coche
 
 # Sprint2
-## DAW WIREFRAMES:
+Explicar que páginas hay y poner el enlace del figma.
 ### Pantalla inicial
 
 ### Pantalla de búsqueda
@@ -53,10 +51,11 @@
 
 ### Pantalla de coches guardados/favoritos
 
-### Pantalla paso1 de vender coche
+### Pantalla paso1 de vender coche (datos del coche)
 
-### Pantalla paso2 de vender coche
-
-### Pantalla paso3 de vender coche
+### Pantalla del anuncio creado
 
 ### Pantalla de juegos (proximamente)
+
+# Sprint3
+Hacer los wireframes con las flechitas.
