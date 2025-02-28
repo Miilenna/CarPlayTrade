@@ -1,0 +1,9 @@
+header{
+    background-color: #4c2a5e;
+}
+a{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+}
