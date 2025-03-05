@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4c2a5e;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 0;
+}
+
+#dynamic-content-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.search-filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+.detailed-search {
+    padding: 15px 30px; /* Ajusta el padding para que el botón sea más grande */
+    background-color: #4c2a5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.detailed-search:hover {
+    background-color: #7f3ba2;
+}
