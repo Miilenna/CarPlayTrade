@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del formulario */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilos del botón de registro */
+.register-button {
+    padding: 10px;
+    background-color: #4c2a5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #7f3ba2;
+}
+
+/* Estilos del mensaje de inicio de sesión */
+.login-message {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+.login-message a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-message a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de las opciones de registro alternativo */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-button.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.social-button.facebook {
+    background-color: #1877f2;
+    color: white;
+}
+
+.social-button:hover {
+    opacity: 0.9;
+}

@@ -1,9 +1,38 @@
-header{
-    background-color: #4c2a5e;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-a{
-    color: white;
+/* Estilos para el header dinámico */
+#header {
+    width: 100%;
     text-align: center;
-    justify-content: center;
-    display:flex;
+    color: white;
+}
+
+header {
+    background-color: #8650a3;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }

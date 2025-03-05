@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/principal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Título y eslogan -->
+    <h1>CarPlayTrade</h1>
+    <p>Conduce, cambia y juega</p>
+
+    <main>
+        <section class="search-filters">
+            <!-- Filtros de búsqueda -->
+            <div class="filter">
+                <label for="brand">Marca</label>
+                <input type="text" id="brand" placeholder="Selecciona marca">
+            </div>
+            <div class="filter">
+                <label for="model">Modelo</label>
+                <input type="text" id="model" placeholder="Selecciona modelo">
+            </div>
+            <div class="filter">
+                <label for="price">Precio</label>
+                <input type="text" id="price" placeholder="Selecciona precio">
+            </div>
+            <div class="filter">
+                <label for="year">Año</label>
+                <input type="text" id="year" placeholder="Selecciona año">
+            </div>
+            <div class="filter">
+                <label for="city">Ciudad/CP</label>
+                <input type="text" id="city" placeholder="Selecciona ciudad/CP">
+            </div>
+            <div class="filter">
+                <label for="results">1.000 Resultados</label>
+                <input type="text" id="results" placeholder="1.000 resultados" disabled>
+            </div>
+        </section>
+    
+        <!-- Botón de búsqueda detallada -->
+        <div class="button-container">
+            <button class="detailed-search">Búsqueda detallada</button>
+        </div>
+    </main>
+    <script src="../js/header.js"></script>
+</body>
+</html>
