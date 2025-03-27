@@ -47,6 +47,8 @@ body {
     font-size: 14px;
 }
 
+
+
 /* Estilos del botón de registro */
 .register-button {
     padding: 10px;
@@ -55,8 +57,9 @@ body {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer;    
 }
+
 
 .register-button:hover {
     background-color: #7f3ba2;
