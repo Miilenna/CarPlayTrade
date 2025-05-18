@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+.movimientos-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #6a4c9c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filtros {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filtros select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.resumen {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.resumen-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.resumen-item span:first-child {
+    display: block;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.resumen-item span:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#balance-total {
+    color: #6a4c9c;
+}
+
+#total-entradas {
+    color: #2ecc71;
+}
+
+#total-salidas {
+    color: #e74c3c;
+}
+
+.lista-movimientos {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.movimiento-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.movimiento-item:last-child {
+    border-bottom: none;
+}
+
+.movimiento-item:hover {
+    background-color: #f9f9f9;
+}
+
+.movimiento-info {
+    flex-grow: 1;
+}
+
+.movimiento-tipo {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.movimiento-tipo.entrada {
+    color: #2ecc71;
+}
+
+.movimiento-tipo.salida {
+    color: #e74c3c;
+}
+
+.movimiento-fecha {
+    color: #777;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.movimiento-region {
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.movimiento-valor {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.movimiento-divisa {
+    color: #777;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.sin-movimientos {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .movimiento-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .movimiento-valor {
+        align-self: flex-end;
+    }
+}

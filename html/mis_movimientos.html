@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Movimientos | AMOS</title>
+    <link rel="stylesheet" href="/css/ver_mov.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main class="movimientos-container">
+        <h1>Mis Movimientos</h1>
+        
+        <div class="filtros">
+            <select id="filtro-tipo">
+                <option value="todos">Todos los movimientos</option>
+                <option value="entrada">Entradas</option>
+                <option value="salida">Salidas</option>
+            </select>
+            
+            <select id="filtro-divisa">
+                <option value="todos">Todas las divisas</option>
+                <option value="EUR">Euro (€)</option>
+                <option value="USD">Dólar ($)</option>
+                <option value="GBP">Libra (£)</option>
+            </select>
+        </div>
+        
+        <div class="resumen">
+            <div class="resumen-item">
+                <span>Balance Total:</span>
+                <span id="balance-total">0.00 €</span>
+            </div>
+            <div class="resumen-item">
+                <span>Entradas:</span>
+                <span id="total-entradas">0.00 €</span>
+            </div>
+            <div class="resumen-item">
+                <span>Salidas:</span>
+                <span id="total-salidas">0.00 €</span>
+            </div>
+        </div>
+        
+        <div class="lista-movimientos" id="lista-movimientos">
+            <div class="sin-movimientos">
+                <p>Cargando tus movimientos...</p>
+            </div>
+        </div>
+    </main>
+    <script src="/js/header.js"></script>
+    <script src="/js/ver_mov.js"></script>
+</body>
+</html>

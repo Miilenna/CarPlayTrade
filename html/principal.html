@@ -8,44 +8,58 @@
 </head>
 <body>
     <div id="header"></div>
-    <!-- Título y eslogan -->
     <h1>CarPlayTrade</h1>
     <p>Conduce, cambia y juega</p>
 
     <main>
         <section class="search-filters">
-            <!-- Filtros de búsqueda -->
             <div class="filter">
-                <label for="brand">Marca</label>
-                <input type="text" id="brand" placeholder="Selecciona marca">
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" name="marca" placeholder="Selecciona marca">
             </div>
             <div class="filter">
-                <label for="model">Modelo</label>
-                <input type="text" id="model" placeholder="Selecciona modelo">
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Selecciona modelo">
             </div>
             <div class="filter">
-                <label for="price">Precio</label>
-                <input type="text" id="price" placeholder="Selecciona precio">
+                <label for="anio">Año</label>
+                <input type="text" id="anio" name="anio" placeholder="Selecciona año">
             </div>
             <div class="filter">
-                <label for="year">Año</label>
-                <input type="text" id="year" placeholder="Selecciona año">
+                <label for="kilometraje">Kilometraje</label>
+                <input type="text" id="kilometraje" name="kilometraje" placeholder="Kilometraje">
             </div>
             <div class="filter">
-                <label for="city">Ciudad/CP</label>
-                <input type="text" id="city" placeholder="Selecciona ciudad/CP">
+                <label for="combustible">Combustible</label>
+                <input type="text" id="combustible" name="combustible" placeholder="Combustible">
             </div>
             <div class="filter">
-                <label for="results">Resultados</label>
-                <input type="text" id="results" placeholder="Resultados" disabled>
+                <label for="precio">Precio</label>
+                <input type="text" id="precio" name="precio" placeholder="Selecciona precio">
             </div>
+            <div class="filter">
+                <label for="caballos">Caballos</label>
+                <input type="text" id="caballos" name="caballos" placeholder="Caballos">
+            </div>
+            <div class="filter">
+                <label for="puertas">Puertas</label>
+                <input type="text" id="puertas" name="puertas" placeholder="Puertas">
+            </div>
+            <div class="filter">
+                <label for="version">Versión</label>
+                <input type="text" id="version" name="version" placeholder="Versión">
+            </div>
+            <div class="filter">
+                <label for="plazas">Plazas</label>
+                <input type="text" id="plazas" name="plazas" placeholder="Plazas">
+            </div>
+            <div class="filter">
+                <label for="resultados">Resultados</label>
+                <input type="text" id="resultados" placeholder="Resultados" disabled>
+            </div>
+            <button id="buscarCoche">Buscar Coche</button>
+            <button id="verResultados">Ver Resultados Detallados</button>
         </section>
-    
-        <!-- Botón de búsqueda detallada -->
-        <div class="button-container">
-            <button class="detailed-search">Búsqueda detallada</button>
-        </div>
     </main>
-    <script src="../js/header.js"></script>
-</body>
-</html>
+    <script src="/js/header.js"></script>
+    <script src="/js/principal.js"></script>

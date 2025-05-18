@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -9,20 +8,18 @@ body {
     margin: 0;
 }
 
-/* Estilos para el contenedor del formulario de inicio de sesión */
 .login-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 20%;
-    min-height: 300px; /* Altura mínima */
+    min-height: 300px; 
     text-align: center;
-    margin-top: 20px; /* Espacio entre el header y el formulario */
+    margin-top: 20px; 
 }
 
 
-/* Resto de los estilos (sin cambios) */
 h2 {
     margin-bottom: 20px;
 }
@@ -33,8 +30,8 @@ h2 {
 }
 
 #sesion a{
-    color: inherit; /* Hereda el color del elemento padre */
-    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; 
+    text-decoration: none; 
 }
 
 label {

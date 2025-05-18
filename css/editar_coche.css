@@ -1,0 +1,53 @@
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imagen-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#imagen-preview {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#eliminar-imagen {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#eliminar-imagen:hover {
+    background-color: #cc0000;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
