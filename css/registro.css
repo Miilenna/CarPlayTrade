@@ -1,33 +1,51 @@
-/* Estilos generales */
+/* Reset y base */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
 
+/* Contenedor principal */
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(106, 76, 156, 0.25);
     text-align: center;
-    margin-top: 20px;
+    transition: box-shadow 0.3s ease;
 }
 
-/* Estilos del formulario */
+.container:hover {
+    box-shadow: 0 20px 40px rgba(106, 76, 156, 0.35);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    color: #4c2a5e;
+    user-select: none;
+}
+
+/* Formulario */
 .register-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
 
+/* Grupo de inputs */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -35,90 +53,168 @@ body {
 }
 
 .form-group label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #5a4a7a;
+    user-select: none;
 }
 
 .form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #b4a7cc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
 }
 
+.form-group input::placeholder {
+    color: #b2a6c9;
+    font-style: italic;
+}
 
+.form-group input:focus {
+    outline: none;
+    border-color: #7f3ba2;
+    box-shadow: 0 0 8px rgba(127, 59, 162, 0.5);
+}
 
-/* Estilos del botón de registro */
+/* Botón de registro */
 .register-button {
-    padding: 10px;
-    background-color: #4c2a5e;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #6a4c9c, #553a7b);
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;    
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(106, 76, 156, 0.35);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+    user-select: none;
+    width: 100%;
 }
-
 
 .register-button:hover {
-    background-color: #7f3ba2;
+    background: linear-gradient(135deg, #7f3ba2, #6a4c9c);
+    box-shadow: 0 9px 28px rgba(127, 59, 162, 0.5);
+    transform: translateY(-3px);
 }
 
-/* Estilos del mensaje de inicio de sesión */
+.register-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(106, 76, 156, 0.3);
+}
+
+.register-button:focus {
+    outline: 3px solid #a085ca;
+    outline-offset: 3px;
+}
+
+/* Mensaje de login */
 .login-message {
-    font-size: 14px;
-    color: #555;
-    margin-top: 15px;
-}
-
-.login-message a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.login-message a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos de las opciones de registro alternativo */
-.social-login {
+    font-size: 0.9rem;
+    color: #7f6ca3;
     margin-top: 20px;
 }
 
+.login-message a {
+    color: #6a4c9c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-message a:hover,
+.login-message a:focus {
+    text-decoration: underline;
+}
+
+/* Login social */
+.social-login {
+    margin-top: 30px;
+    user-select: none;
+}
+
 .social-login p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #7a699d;
+    margin-bottom: 12px;
 }
 
 .social-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 16px;
 }
 
+/* Botones sociales */
 .social-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    user-select: none;
+    border: none;
+    color: white;
+    letter-spacing: 0.04em;
 }
 
+/* Google */
 .social-button.google {
     background-color: #db4437;
-    color: white;
+    box-shadow: 0 6px 20px rgba(219, 68, 55, 0.6);
 }
 
+.social-button.google:hover {
+    background-color: #e2574a;
+    box-shadow: 0 9px 28px rgba(226, 87, 74, 0.7);
+    transform: translateY(-3px);
+}
+
+.social-button.google:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(219, 68, 55, 0.4);
+}
+
+/* Facebook */
 .social-button.facebook {
     background-color: #1877f2;
-    color: white;
+    box-shadow: 0 6px 20px rgba(24, 119, 242, 0.6);
 }
 
-.social-button:hover {
-    opacity: 0.9;
+.social-button.facebook:hover {
+    background-color: #3a89ff;
+    box-shadow: 0 9px 28px rgba(58, 137, 255, 0.7);
+    transform: translateY(-3px);
+}
+
+.social-button.facebook:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(24, 119, 242, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+        max-width: 90vw;
+    }
+
+    .register-button,
+    .social-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
 }

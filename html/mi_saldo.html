@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/mi_saldo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Saldo | AMOS</title>
+  <link rel="stylesheet" href="/css/mi_saldo.css" />
 </head>
-<div id="header"></div>
 <body>
-    <div class="body">
-        <div class="sidebar">
-            <ul>
-                <li><a href="/html/perfil.html" id="perfil">Perfil</a></li>
-                <li><a href="/html/mis_anuncios.html" id="anuncios">Mis anuncios</a></li>
-                <li><a href="/html/mi_saldo.html" id="saldo">Mi saldo</a></li>
-            </ul>
+  <div id="header"></div>
+
+  <div class="body">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="/html/perfil.html" id="perfil">Perfil</a></li>
+        <li><a href="/html/mis_anuncios.html" id="anuncios">Mis anuncios</a></li>
+        <li><a href="/html/mi_saldo.html" id="saldo" class="active">Mi saldo</a></li>
+      </ul>
+    </aside>
+
+    <main class="contenido-principal">
+      <section class="saldo-card">
+        <h1>Tu Saldo Actual</h1>
+        <div id="cartera" class="saldo-cifra">Cargando...</div>
+        <div class="botones">
+          <a href="/html/hacer_movimiento.html" class="boton primario">Hacer Movimiento</a>
+          <a href="/html/mis_movimientos.html" class="boton secundario">Ver Movimiento</a>
         </div>
-        <div id="saldo-info">
-          tu saldo : €€€€ <br>
-          btn hacer movimiento <br>
-          btn revisar movimiento
-        </div>
-    </div>
-    <script src="/js/header.js"></script>
+      </section>
+
+      <button id="cerrar_sesion" class="boton cerrar-sesion">Cerrar sesión</button>
+    </main>
+  </div>
+
+  <script src="/js/header.js"></script>
+  <script src="/js/cartera.js"></script>
 </body>
 </html>

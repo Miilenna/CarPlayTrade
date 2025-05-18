@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar-filtros {
+    width: 220px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: fit-content;
+}
+
+.sidebar-filtros h3 {
+    margin-top: 0;
+}
+
+.filtro {
+    margin-bottom: 15px;
+}
+
+.filtro label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filtro input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+#btn-aplicar-filtros {
+    width: 100%;
+    padding: 8px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#btn-aplicar-filtros:hover {
+    background-color: #005fa3;
+}
+
+.resultados-lista {
+    flex: 1;
+}
+
+.coche-card {
+    display: flex;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+    align-items: center;
+    background-color: #fff;
+    width: 80%;
+}
+
+.imagen-coche-contenedor {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.imagen-coche-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.coche-info h3 {
+    margin: 0 0 6px 0;
+}
+
+.coche-info p {
+    margin: 2px 0;
+}
+.boton-ver-anuncio-contenedor {
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.ver-anuncio-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-anuncio-btn:hover {
+    background-color: #0056b3;
+}   

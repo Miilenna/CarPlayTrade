@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Coche</title>
+    <link rel="stylesheet" href="/css/nuevo_coche.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="formulario-container">
+        <h2>Registrar nuevo coche</h2>
+        <form id="form-nuevo-coche">
+            <input type="text" id="marca" name="marca" placeholder="Marca" required>
+            <input type="text" id="modelo" name="modelo" placeholder="Modelo" required>
+            <input type="number" id="anio" name="anio" placeholder="Año" required>
+            <input type="number" id="kilometraje" name="kilometraje" placeholder="Kilometraje" required>
+            <input type="text" id="combustible" name="combustible" placeholder="Combustible" required>
+            <input type="number" id="precio" name="precio" placeholder="Precio (€)" required>
+            <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required>
+            <input type="number" id="caballos" name="caballos" placeholder="Caballos" required>
+            <input type="number" id="puertas" name="puertas" placeholder="Puertas" required>
+            <input type="text" id="version" name="version" placeholder="Versión" required>
+            <input type="number" id="plazas" name="plazas" placeholder="Plazas" required>
+
+            <button type="submit">Guardar coche</button>
+        </form>
+    </div>
+    <script src="/js/nuevo_coche.js"></script>
+    <script src="/js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="/css/resultados.css" />
+</head>
+<body>
+    <div id="header"></div>
+    <main class="main-container">
+        <aside class="sidebar-filtros">
+            <h3>Filtros</h3>
+            <div class="filtro">
+                <label for="filtro-marca">Marca:</label>
+                <input type="text" id="filtro-marca" placeholder="Marca" />
+            </div>
+            <div class="filtro">
+                <label for="filtro-modelo">Modelo:</label>
+                <input type="text" id="filtro-modelo" placeholder="Modelo" />
+            </div>
+            <div class="filtro">
+                <label for="filtro-anio">Año:</label>
+                <input type="text" id="filtro-anio" placeholder="Año" />
+            </div>
+            <div class="filtro">
+                <label for="filtro-combustible">Combustible:</label>
+                <input type="text" id="filtro-combustible" placeholder="Combustible" />
+            </div>
+            <button id="btn-aplicar-filtros">Aplicar filtros</button>
+        </aside>
+        <section id="resultados-container" class="resultados-lista">
+            <p>Cargando resultados...</p>
+            <button class="ver-anuncio-btn" data-id="${coche.id}">Ver anuncio</button>
+        </section>
+        
+    </main>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/resultados.js"></script>
+</body>
+</html>
