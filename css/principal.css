@@ -20,15 +20,6 @@ p {
     margin-top: 0;
 }
 
-#dynamic-content-container {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-}
-
 main {
     margin-top: 20px;
 }
@@ -39,6 +30,9 @@ main {
     gap: 15px;
     margin-bottom: 20px;
     padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .filter {
@@ -59,21 +53,50 @@ main {
 }
 
 .button-container {
+    grid-column: 1 / -1; /* que ocupe toda la fila */
     display: flex;
     justify-content: center; 
-    margin-top: 20px; 
+    gap: 15px;
+    margin-top: 10px;
 }
-
 .detailed-search {
-    padding: 15px 30px; 
-    background-color: #4c2a5e;
+    padding: 15px 40px; /* más ancho para mejor aspecto */
+    background: linear-gradient(135deg, #6a4c9c, #553a7b);
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
+    border-radius: 8px;
+    font-size: 1.25em;
+    font-weight: 600;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(106, 76, 156, 0.4);
+    transition: 
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.1s ease;
+    user-select: none;
 }
 
 .detailed-search:hover {
-    background-color: #7f3ba2;
+    background: linear-gradient(135deg, #7f3ba2, #6a4c9c);
+    box-shadow: 0 6px 14px rgba(127, 59, 162, 0.6);
+    transform: translateY(-2px);
+}
+
+.detailed-search:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(106, 76, 156, 0.3);
+}
+
+.detailed-search:focus {
+    outline: 3px solid #a085ca;
+    outline-offset: 3px;
+}
+
+/* Adaptación en móvil */
+@media (max-width: 768px) {
+    .detailed-search {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.2em;
+    }
 }
